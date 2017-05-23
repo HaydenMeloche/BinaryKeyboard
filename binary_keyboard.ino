@@ -54,12 +54,12 @@ void loop() {
   } else {
     if (digitalRead(A1) == LOW) {
       delay(200);
-      Serial.write('0');
+      //Serial.write('0');
       binary += "0";
     }
     if (digitalRead(A0) == LOW) {
       delay(200);
-      Serial.write("1");
+      //Serial.write("1");
       binary += "1";
     }
     if (digitalRead(A2) == LOW) {
