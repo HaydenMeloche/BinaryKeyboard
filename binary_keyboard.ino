@@ -64,10 +64,11 @@ void loop() {
     }
     if (digitalRead(A2) == LOW) {
       delay(200);
-      if (binary != "" && binary.length() == 8) {
+      if (binary.length() == 8) {
         binaryConvert(atol(binary.c_str()));
       } else {
-        //Keyboard.print(" ");
+        //Acts as spacebar if not long enough
+        Keyboard.print(" ");
       }
     }
   }
